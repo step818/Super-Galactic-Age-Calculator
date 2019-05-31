@@ -5,6 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { DOB } from './calculator';
 
 $(document).ready(function() {
+
+  console.log("atleast this");
+
   let i = 0;
   for(i= new Date().getFullYear(); i > 1800; i--)
   {
@@ -21,16 +24,18 @@ $(document).ready(function() {
     $('#day').append($('<option> </option>').val(k).html(k));
   }
 
-  $('#submitBtn').click(function() {
+  $('#calc-form').submit(function(event) {
+    event.preventDefault();  
 
     let year = $('#year').val();
     let month = $('#month').val();
     let day = $('#day').val();
     let d = new DOB(year, month, day);
 
+    console.log("herro");
     $('#mercury').text(d.mercuryAge(year, month,day));
     $('#venus').text(d.venusAge(year, month, day));
-    $('#earth').text(d.earthAge(year, month,day));
+    $('#earth').text(d.earthAge(year, month, day));
     $('#mars').text(d.marsAge(year, month, day));
     $('#jupiter').text(d.jupiterAge(year, month,day));
     $('#saturn').text(d.saturnAge(year, month, day));
