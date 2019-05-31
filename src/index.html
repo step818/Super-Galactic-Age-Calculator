@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Super Galactic Age Calculator
+    </title>
+  </head>
+  <body>
+    <h1>Super Galactic Age Calculator</h1>
+    <div class="container">
+    <h3>Select your birth date to find out your age on other planets</h3>
+      <form id="day-calc-form">
+        
+        <select id="year" name="year" placeholder="select year">
+        <option value="" selected>select year</option>
+        </select>
+
+        <select id="month" name="month" placeholder="select month">
+        <option value="" selected>select month</option>
+        </select>
+
+        <select id="date" name="date" placeholder="select date">
+        <option value="" selected>select date</option>
+        </select>
+        
+        <button type="button" name="btn btn-info" id="submitBtn">Submit</button>
+      </form>
+
+      <p>On Mercury, your age is: <span id="mercury"></span>.</p>
+      <p>On Venus, your age is: <span id="venus"></span>.</p>
+      <p>On Earth, your age is: <span id="earth"></span>.</p>
+      <p>On Mars, your age is: <span id="mars"></span>.</p>
+      <p>On Jupiter, your age is: <span id="jupiter"></span>.</p>
+      <p>On Saturn, your age is: <span id="saturn"></span>.</p>
+    </div>
+  </body>
+</html>
