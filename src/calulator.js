@@ -1,1 +1,0 @@
-export function earthBD(year, month, day)
