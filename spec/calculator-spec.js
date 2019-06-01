@@ -14,5 +14,11 @@ describe('DOB', function() {
     expect(m.mercuryAge()).toEqual('127.543');
   });
 
+  it('should test the earth function is creating an instance', () => {
+    var n = new DOB(2000, 1, 1);
+    expect(n).toBeTruthy();
+  });
+
+
 
 });
