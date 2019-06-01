@@ -8,4 +8,11 @@ describe('DOB', function() {
     expect(test.month).toEqual(10);
     expect(test.day).toEqual(31);
   });
+
+  it('should test the mercury function for expected return', function() {
+    var m = new DOB(1988, 8, 18);
+    expect(m.mercuryAge()).toEqual('127.543');
+  });
+
+
 });
