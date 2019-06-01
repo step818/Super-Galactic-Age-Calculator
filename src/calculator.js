@@ -11,11 +11,13 @@ export class DOB {
   
 
   earthAge() {
-    let thisYear = new Date().getFullYear();
-    //let thisMonth = new Date().getMonth();
-    console.log(this.year);
-    console.log(thisYear);
-    return ((thisYear)-(this.year)); 
+    let thisYear = parseFloat(new Date().getFullYear());
+    let thisMonth = parseFloat(new Date().getMonth());
+  
+    var presentMonth = ((thisMonth / 12) + thisYear);
+    var yourMonth = ((this.month / 12) + parseInt(this.year));
+    
+    return (presentMonth - yourMonth).toFixed(2);
   }
 
   venusAge() {
