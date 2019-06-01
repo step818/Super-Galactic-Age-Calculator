@@ -19,6 +19,14 @@ describe('DOB', function() {
     expect(n).toBeTruthy();
   });
 
+  it('should test the venus function for correct year ratio', () => {
+    var o = new DOB(2000, 1, 1);
+    var venusYear = (225/365).toFixed(3);
+    expect(o).toBeTruthy();
+    expect(o.venusAge()).toEqual('31.362');
+    expect(venusYear).toEqual('0.616');
+    
+  });
 
 
 });
