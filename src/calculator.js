@@ -2,8 +2,8 @@ var thisYear = parseFloat(new Date().getFullYear());
 var thisMonth = parseFloat(new Date().getMonth());
 var presentMonth = ((thisMonth / 12) + thisYear);
 
-var maleEarthExp = 76.4;
-var femaEarthExp = 81.2;
+const maleEarthExp = 76.4;
+const femaEarthExp = 81.2;
 
 export class DOB {
   constructor(year, month, day, sex) {
@@ -79,9 +79,69 @@ export class DOB {
     var yourMonth = ((this.month / 12) + parseInt(this.year));
 
     if(this.sex == "male") {
-      return (maleEarthExp - (presentMonth - yourMonth)).toFixed(3);
+      let mExp = (maleEarthExp - (presentMonth - yourMonth)).toFixed(3);
+      return mExp;
     } else if (this.sex == "female") {
       return (femaEarthExp - (presentMonth - yourMonth)).toFixed(3);
+    }
+  }
+
+  mercExp() {
+    if (this.sex == "male") {
+      let mExp = (maleEarthExp - parseFloat(this.mercuryAge()));
+      console.log(mExp);
+      if (mExp >= 0) {
+        return mExp;
+      } else {
+        return ("exceeded your life on Mercury by " + (-1*mExp));
+      }
+    }
+  }
+
+  venuExp() {
+    if (this.sex == "male") {
+      let mExp = (maleEarthExp - parseFloat(this.venusAge()));
+      console.log(mExp);
+      if (mExp >= 0) {
+        return mExp;
+      } else {
+        return ("exceeded your life on Venus by " + (-1*mExp));
+      }
+    }
+  }
+
+  marsExp() {
+    if (this.sex == "male") {
+      let mExp = (maleEarthExp - parseFloat(this.marsAge()));
+      console.log(mExp);
+      if (mExp >= 0) {
+        return mExp;
+      } else {
+        return ("exceeded your life on Mars by " + (-1*mExp));
+      }
+    }
+  }
+
+  jupiExp() {
+    if (this.sex == "male") {
+      let mExp = (maleEarthExp - parseFloat(this.jupiterAge()));
+      console.log(mExp);
+      if (mExp >= 0) {
+        return mExp;
+      } else {
+        return ("exceeded your life on Jupiter by " + (-1*mExp));
+      }
+    }
+  }
+  satuExp() {
+    if (this.sex == "male") {
+      let mExp = (maleEarthExp - parseFloat(this.saturnAge()));
+      console.log(mExp);
+      if (mExp >= 0) {
+        return mExp;
+      } else {
+        return ("exceeded your life on Saturn by " + (-1*mExp));
+      }
     }
   }
 }

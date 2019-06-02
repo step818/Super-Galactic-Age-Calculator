@@ -41,6 +41,11 @@ $(document).ready(function() {
     $('#jupiter').text(d.jupiterAge(year, month,day, sex));
     $('#saturn').text(d.saturnAge(year, month, day, sex));
 
+    $('#meLE').text(d.mercExp(year,month,day,sex));
+    $('#veLE').text(d.venuExp(year,month,day,sex));
     $('#eaLE').text(d.LifeExp(year, month, day, sex));
+    $('#maLE').text(d.marsExp(year,month,day,sex));
+    $('#juLE').text(d.jupiExp(year,month,day,sex));
+    $('#saLE').text(d.satuExp(year,month,day,sex));
   });
 });
