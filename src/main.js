@@ -30,15 +30,17 @@ $(document).ready(function() {
     let year = $('#year').val();
     let month = $('#month').val();
     let day = $('#day').val();
-    let d = new DOB(year, month, day);
+    let sex = $('#sex').val();
+    let d = new DOB(year, month, day, sex);
 
     console.log("herro");
-    $('#mercury').text(d.mercuryAge(year, month,day));
-    $('#venus').text(d.venusAge(year, month, day));
-    $('#earth').text(d.earthAge(year, month, day));
-    $('#mars').text(d.marsAge(year, month, day));
-    $('#jupiter').text(d.jupiterAge(year, month,day));
-    $('#saturn').text(d.saturnAge(year, month, day));
+    $('#mercury').text(d.mercuryAge(year, month,day, sex));
+    $('#venus').text(d.venusAge(year, month, day, sex));
+    $('#earth').text(d.earthAge(year, month, day, sex));
+    $('#mars').text(d.marsAge(year, month, day, sex));
+    $('#jupiter').text(d.jupiterAge(year, month,day, sex));
+    $('#saturn').text(d.saturnAge(year, month, day, sex));
 
+    $('#eaLE').text(d.LifeExp(year, month, day, sex));
   });
 });

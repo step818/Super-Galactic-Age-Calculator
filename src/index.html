@@ -2,15 +2,15 @@
 <html>
   <head>
     <title>
-      Super Galactic Age Calculator
+        Super Galactic Age Calculator
     </title>
   </head>
   <body>
     <h1>Super Galactic Age Calculator</h1>
     <div class="container">
-    <h3>Select your birth date to find out your age on other planets</h3>
+      <h3>Select your birth date to find out your age on other planets</h3>
       <form id="calc-form">
-        
+            
         <select id="year" name="year" placeholder="select year">
         <option value="" selected>select year</option>
         </select>
@@ -22,16 +22,31 @@
         <select id="day" name="day" placeholder="select day">
         <option value="" selected>select day</option>
         </select>
-        
-        <button class="btn-submit" type="submit">Go!</button>
-      </form>
 
-      <p>On Mercury, your age is: <span id="mercury"></span>.</p>
-      <p>On Venus, your age is: <span id="venus"></span>.</p>
-      <p>On Earth, your age is: <span id="earth"></span>.</p>
-      <p>On Mars, your age is: <span id="mars"></span>.</p>
-      <p>On Jupiter, your age is: <span id="jupiter"></span>.</p>
-      <p>On Saturn, your age is: <span id="saturn"></span>.</p>
+        <select id="sex" name="sex" placeholder="select orientation">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        </select>
+            
+        <button class="btn-submit" type="submit">Go!</button>
+        </form>
+
+        <p>On Mercury, your age is: <span id="mercury"></span>.</p>
+        <p>On Venus, your age is: <span id="venus"></span>.</p>
+        <p>On Earth, your age is: <span id="earth"></span>.</p>
+        <p>On Mars, your age is: <span id="mars"></span>.</p>
+        <p>On Jupiter, your age is: <span id="jupiter"></span>.</p>
+        <p>On Saturn, your age is: <span id="saturn"></span>.</p>
+        <br>
+        <h4>Based on your sex, you have:</h4>
+        
+        <p><span id="meLE"></span> years left on Mercury.</p>
+        <p><span id="veLE"></span> years left on Venus.</p>
+        <p><span id="eaLE"></span> years left on Earth.</p>
+        <p><span id="maLE"></span> years left on Mars.</p>
+        <p><span id="juLE"></span> years left on Jupiter.</p>
+        <p><span id="saLE"></span> years left on Saturn.</p>
+        
     </div>
   </body>
 </html>
