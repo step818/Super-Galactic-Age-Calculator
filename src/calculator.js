@@ -53,6 +53,23 @@ export class DOB {
     return yourMarAge;
   }
 
+  jupiterAge() {
+    var yourMonth = ((this.month / 12) + parseInt(this.year));
 
-  
+    var jupiYear = (12);
+    var earthAge = (presentMonth - yourMonth).toFixed(3);
+    var yourJupiAge = (earthAge / jupiYear).toFixed(3);
+
+    return yourJupiAge;
+  }
+
+  saturnAge() {
+    var yourMonth = ((this.month / 12) + parseInt(this.year));
+
+    var satuYear = (29);
+    var earthAge = (presentMonth - yourMonth).toFixed(3);
+    var yourSatuAge = (earthAge / satuYear).toFixed(3);
+
+    return yourSatuAge;
+  }
 }
