@@ -84,7 +84,7 @@ export class DOB {
 
   mercExp() {
     if (this.sex == "male") {
-      let mExp = (maleEarthExp - parseFloat(this.mercuryAge()));
+      let mExp = (maleEarthExp - parseFloat(this.mercuryAge())).toFixed(3);
       
       if (mExp >= 0) {
         return mExp;
@@ -96,7 +96,7 @@ export class DOB {
 
   venuExp() {
     if (this.sex == "male") {
-      let mExp = (maleEarthExp - parseFloat(this.venusAge()));
+      let mExp = (maleEarthExp - parseFloat(this.venusAge())).toFixed(3);
     
       if (mExp >= 0) {
         return mExp;
@@ -108,7 +108,7 @@ export class DOB {
 
   marsExp() {
     if (this.sex == "male") {
-      let mExp = (maleEarthExp - parseFloat(this.marsAge()));
+      let mExp = (maleEarthExp - parseFloat(this.marsAge())).toFixed(3);
       if (mExp >= 0) {
         return mExp;
       } else {
@@ -119,7 +119,7 @@ export class DOB {
 
   jupiExp() {
     if (this.sex == "male") {
-      let mExp = (maleEarthExp - parseFloat(this.jupiterAge()));
+      let mExp = (maleEarthExp - parseFloat(this.jupiterAge())).toFixed(3);
       console.log(mExp);
       if (mExp >= 0) {
         return mExp;
@@ -130,7 +130,7 @@ export class DOB {
   }
   satuExp() {
     if (this.sex == "male") {
-      let mExp = (maleEarthExp - parseFloat(this.saturnAge()));
+      let mExp = (maleEarthExp - parseFloat(this.saturnAge())).toFixed(3);
       console.log(mExp);
       if (mExp >= 0) {
         return mExp;
