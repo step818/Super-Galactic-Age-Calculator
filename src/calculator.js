@@ -1,6 +1,7 @@
 var thisYear = parseFloat(new Date().getFullYear());
 var thisMonth = parseFloat(new Date().getMonth());
-var presentMonth = ((thisMonth / 12) + thisYear);
+var thisDay = parseFloat(new Date().getDate());
+var presentDay = ((thisDay / 31) + (thisMonth / 12) + thisYear);
 
 const maleEarthExp = 76.4;
 const femaEarthExp = 81.2;
@@ -17,39 +18,34 @@ export class DOB {
     var yourMonth = ((this.month / 12) + parseInt(this.year));
     
     var mercYear = (88 / 365);
-    var earthAge = (presentMonth - yourMonth).toFixed(3);
+    var earthAge = (presentDay - yourMonth).toFixed(3);
     var yourMercAge = (earthAge / mercYear).toFixed(3);
 
     return yourMercAge;
   }
 
   venusAge() {
-    // var thisYear = parseFloat(new Date().getFullYear());
-    // var thisMonth = parseFloat(new Date().getMonth());
-    // var presentMonth = ((thisMonth / 12) + thisYear);
     var yourMonth = ((this.month / 12) + parseInt(this.year));
     
     var venusYear = (225 / 365);
-    var earthAge = (presentMonth - yourMonth).toFixed(3);
+    var earthAge = (presentDay - yourMonth).toFixed(3);
     var yourVenAge = (earthAge / venusYear).toFixed(3);
 
     return yourVenAge;
   }
   
   earthAge() {
-    // var thisYear = parseFloat(new Date().getFullYear());
-    // var thisMonth = parseFloat(new Date().getMonth());
-    // var presentMonth = ((thisMonth / 12) + thisYear);
+
     var yourMonth = ((this.month / 12) + parseInt(this.year));
     
-    return (presentMonth - yourMonth).toFixed(3);
+    return (presentDay - yourMonth).toFixed(3);
   }
 
   marsAge() {
     var yourMonth = ((this.month / 12) + parseInt(this.year));
 
     var marsYear = (687 / 365);
-    var earthAge = (presentMonth - yourMonth).toFixed(3);
+    var earthAge = (presentDay - yourMonth).toFixed(3);
     var yourMarAge = (earthAge / marsYear).toFixed(3);
 
     return yourMarAge;
@@ -59,7 +55,7 @@ export class DOB {
     var yourMonth = ((this.month / 12) + parseInt(this.year));
 
     var jupiYear = (12);
-    var earthAge = (presentMonth - yourMonth).toFixed(3);
+    var earthAge = (presentDay - yourMonth).toFixed(3);
     var yourJupiAge = (earthAge / jupiYear).toFixed(3);
 
     return yourJupiAge;
@@ -69,7 +65,7 @@ export class DOB {
     var yourMonth = ((this.month / 12) + parseInt(this.year));
 
     var satuYear = (29);
-    var earthAge = (presentMonth - yourMonth).toFixed(3);
+    var earthAge = (presentDay - yourMonth).toFixed(3);
     var yourSatuAge = (earthAge / satuYear).toFixed(3);
 
     return yourSatuAge;
@@ -79,17 +75,17 @@ export class DOB {
     var yourMonth = ((this.month / 12) + parseInt(this.year));
 
     if(this.sex == "male") {
-      let mExp = (maleEarthExp - (presentMonth - yourMonth)).toFixed(3);
+      let mExp = (maleEarthExp - (presentDay - yourMonth)).toFixed(3);
       return mExp;
     } else if (this.sex == "female") {
-      return (femaEarthExp - (presentMonth - yourMonth)).toFixed(3);
+      return (femaEarthExp - (presentDay - yourMonth)).toFixed(3);
     }
   }
 
   mercExp() {
     if (this.sex == "male") {
       let mExp = (maleEarthExp - parseFloat(this.mercuryAge()));
-      console.log(mExp);
+      
       if (mExp >= 0) {
         return mExp;
       } else {
@@ -101,7 +97,7 @@ export class DOB {
   venuExp() {
     if (this.sex == "male") {
       let mExp = (maleEarthExp - parseFloat(this.venusAge()));
-      console.log(mExp);
+    
       if (mExp >= 0) {
         return mExp;
       } else {
@@ -113,7 +109,6 @@ export class DOB {
   marsExp() {
     if (this.sex == "male") {
       let mExp = (maleEarthExp - parseFloat(this.marsAge()));
-      console.log(mExp);
       if (mExp >= 0) {
         return mExp;
       } else {
