@@ -46,25 +46,6 @@ including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application 
   </tr>
   <tr>
     <td>Behavior</td>
-    <td>A non-null value for date of birth must be entered</td>
-  </tr>
-  <tr>
-    <td>Input</td>
-    <td>A non-null value</td>
-  </tr>
-  <tr>
-    <td>Output</td>
-    <td>Error message if a value was not entered</td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th>Specification 03</th>
-    <th></th>
-  </tr>
-  <tr>
-    <td>Behavior</td>
     <td>The value must be a valid date in the past</td>
   </tr>
   <tr>
@@ -73,13 +54,13 @@ including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application 
   </tr>
   <tr>
     <td>Output</td>
-    <td>Error message if the entered value is not valid</td>
+    <td>Correct calculated results</td>
   </tr>
 </table>
 
 <table>
   <tr>
-    <th>Specification 04</th>
+    <th>Specification 03</th>
     <th></th>
   </tr>
   <tr>
@@ -98,7 +79,7 @@ including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application 
 
 <table>
   <tr>
-    <th>Specification 05</th>
+    <th>Specification 04</th>
     <th></th>
   </tr>
   <tr>
@@ -117,7 +98,7 @@ including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application 
 
 <table>
   <tr>
-    <th>Specification 06</th>
+    <th>Specification 05</th>
     <th></th>
   </tr>
   <tr>
@@ -136,7 +117,7 @@ including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application 
 
 <table>
   <tr>
-    <th>Specification 07</th>
+    <th>Specification 06</th>
     <th></th>
   </tr>
   <tr>
@@ -155,7 +136,7 @@ including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application 
 
 <table>
   <tr>
-    <th>Specification 08</th>
+    <th>Specification 07</th>
     <th></th>
   </tr>
   <tr>
@@ -174,7 +155,7 @@ including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application 
 
 <table>
   <tr>
-    <th>Specification 09</th>
+    <th>Specification 08</th>
     <th></th>
   </tr>
   <tr>
@@ -193,7 +174,7 @@ including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application 
 
 <table>
   <tr>
-    <th>Specification 10</th>
+    <th>Specification 09</th>
     <th></th>
   </tr>
   <tr>
@@ -212,7 +193,7 @@ including the planets Mercury, Venus, Mars, Jupiter and Saturn. The application 
 
 <table>
   <tr>
-    <th>Specification 11</th>
+    <th>Specification 10</th>
     <th></th>
   </tr>
   <tr>
